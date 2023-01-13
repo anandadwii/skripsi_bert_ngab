@@ -16,9 +16,10 @@ for i, tweet in enumerate(
     if i > 100:
         break
     result = tweet.content.lower()
-    result = re.sub(r'(@|https?)\S+|#','',result)
+    result = re.sub(r'(@|https?)\S+|#', '', result)
     # result = re.sub(r'(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w\.-]*)', '', result)
     # reuslt = re.sub(r'@\w+', '', result)
+    result = result.replace("&amp;", "")
     result = remove_n(result)
     result = result.strip()
     tweet_list.append(result)
