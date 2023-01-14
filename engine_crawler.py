@@ -7,7 +7,7 @@ import emoji
 
 
 def preprocessing_data(text: Any) -> str:
-    """"clean your data from link, tag, stopword, mention, hastag, and number"""
+    """"clean your data from shit"""
     result = text.lower()
     result = re.sub(r'(@|https?)\S+|#', '', result).replace("&amp;", "dan")
     result = re.sub(r'[^\w\s]', '', result)
