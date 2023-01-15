@@ -19,7 +19,7 @@ def preprocessing_data(text: Any) -> str:
 
 def remove_backslash_n(value: str) -> str:
     """"get rid \n from string"""
-    return ' '.join(value.splitlines())
+    return ' '.join(value.split())
 
 
 def get_emoji_regexp():
@@ -34,10 +34,10 @@ begone_emoji = get_emoji_regexp()
 
 query = '("kinerja polri" OR "kinerja polisi")'
 time_start = '2022-10-01'
-time_end = '2022-10-31'
-file_name = r'mengetes--.xlsx'
+time_end = '2022-12-31'
+file_name = r'preprocessing_dataset_tweet.xlsx'
 tweet_list = []
-sheet_name = "data oktober 2022"
+sheet_name = "data crawl okt-des 2022"
 try:
     for i, tweet in enumerate(
             crawler.TwitterSearchScraper(f'{query} until:{time_end} since:{time_start}').get_items()):
