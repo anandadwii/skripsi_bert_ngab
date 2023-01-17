@@ -33,16 +33,16 @@ def get_emoji_regexp():
 begone_emoji = get_emoji_regexp()
 
 query = '("kinerja polri" OR "kinerja polisi")'
-time_start = '2022-10-01'
+time_start = '2022-07-01'
 time_end = '2022-12-31'
-file_name = r'preprocessing_dataset_tweet.xlsx'
+file_name = r'data semester 2 2022.xlsx'
 tweet_list = []
-sheet_name = "data crawl okt-des 2022"
+sheet_name = "data crawl jul-des 2022"
 try:
     for i, tweet in enumerate(
             crawler.TwitterSearchScraper(f'{query} until:{time_end} since:{time_start}').get_items()):
         try:
-            if i > 10000:
+            if i > 15000:
                 break
             clean_tweet = preprocessing_data(tweet.content)
             tweet_list.append(clean_tweet)
