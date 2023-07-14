@@ -1,5 +1,7 @@
 # skripsi_bert_ngab
 
+engine_crawler.py to get data from twitter
+anoother_preprocessing.ipynb to process and get the data such as graph. table. and h5 model.
 ## Initialize Python Virtual Environment
 python -m venv venv
 
