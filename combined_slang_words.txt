@@ -536,7 +536,6 @@
     "tgu": "tunggu",
     "thankz": "terima kasih",
     "thn": "tahun",
-    "tilang": "bukti pelanggaran",
     "tipiwan": "TvOne",
     "tks": "terima kasih",
     "tlp": "telepon",
@@ -1075,5 +1074,6 @@
     "god": "tuhan",
     "gatau": "tidak tahu",
     "ges": "teman-teman",
-    "bakal": "akan"  
+    "bakal": "akan",
+    "etle":"tilang elektronik"
 }
